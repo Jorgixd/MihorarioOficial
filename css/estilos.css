@@ -1,0 +1,146 @@
+/* Estilos generales */
+/* Estilos generales */
+body {
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0 15px; /* Añadir espacio igual a ambos costados */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    min-height: 100vh; /* Ocupa al menos el 100% de la altura de la ventana */
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+/* Ajuste para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 15px; /* Añadir un espaciado igual a los lados en pantallas pequeñas */
+    }
+}
+
+
+/* Estilos del encabezado */
+header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px 0;
+    height: 100px;
+    width: 100%;
+}
+
+h1 {
+    color: brown;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Estilos del contenedor de la tabla */
+.table-container {
+    width: 100%;
+    max-width: 1200px; /* Máximo ancho para que no se extienda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 10px;
+}
+
+/* Estilos de la tabla */
+table {
+    border-collapse: collapse;
+    width: 100%; /* La tabla ocupa todo el ancho disponible */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    
+}
+
+/* Estilos para las celdas de la tabla */
+th {
+    text-align: center;
+    background-color: #008080; /* verde azulado */
+    color: white;
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+    border: 1px solid #555;
+    padding: 10px;
+}
+.table-container    
+
+{
+
+overflow-x: auto;
+width: 100%;
+max-width: 1200px; /* Máximo ancho para que no se extienda demasiado en pantallas grandes */
+margin: 0 auto; /* Centra el contenedor en el centro de la pantalla */
+padding: 10px;
+box-sizing: border-box; 
+
+
+
+}
+
+/* Colores alternados para las filas de la tabla */
+tbody tr:nth-child(even) {
+    background-color: chocolate; /* gris claro */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: aqua; /* blanco */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: aquamarine; /* Mismo fondo que el encabezado */
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer a {
+    color: brown; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado cuando se pasa el ratón por encima */
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilos para hacer la tabla responsive */
+@media screen and (max-width: 768px) {
+    .table-container {
+        padding: 0 10px; /* Añadir un poco de padding a los lados para evitar que se vea muy pegado */
+    }
+
+    table {
+        font-size: 12px; /* Reducir el tamaño de la fuente para pantallas pequeñas */
+        width: 100%;
+        overflow-x: auto; /* Permite hacer scroll horizontal en pantallas pequeñas */
+    }
+
+    th, td {
+        padding: 8px; /* Reducir el padding de las celdas para que quepan mejor en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Ajustar el tamaño del título en pantallas muy pequeñas */
+    }
+
+    footer p {
+        font-size: 14px; /* Reducir tamaño de fuente en pie de página para pantallas pequeñas */
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<!--cuerpo  -->
+<body >
+    <!--titulo  todo limpio practicando para acostumbrarme a usar css intento 1  -->
+    <header>
+        <h1>HORARIO DEL INSTITUTO PÚBLICO TUPAC AMARU<br>
+            DESARROLLO DE SISTEMAS Y INFORMACIÓN</h1>
+    </header>
+
+<!--para que se acomode o se ajuste o se vea en el celular buena referencia para cuadros-->
+
+    <div class="table-container">
+
+
+        <!-- selecion -->
+        <section>
+
+
+            <!--tabla  border 1 seria o vendria ser lo que use para el cuadro  -->
+            <table style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" border="1">
+               
+               <!--vendria a ser fila en la columna  -->
+                <thead>
+
+                    <!-- -->
+
+                    <!--en forma de fila  -->
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+
+                <!--columna para abajo el texto -->
+                <tbody>
+                    <tr>
+                        <!--esto es para ocupar solo un espacio -->
+                        <td>8:00 - 8:45</td>
+                        <!--esto es para poder usar 2 espacios se podria usar varios para que sea mas interesante   -->
+
+                        <td rowspan="2">Arquitectura de Software</td>
+                        <td rowspan="2">Programación de BD</td>
+                        <td>Proyectos de Sistemas de Información</td>
+                        <td>Tecnología Frontend</td>
+                        <td>Programación de BD</td>
+                    </tr>
+                    <!--salto de fila  --> 
+                    <tr>
+                        <td>8:45 - 9:30</td>
+                        <td>Proyectos de Sistemas de Información</td>
+                        <td>Tecnología Frontend</td>
+                        <td>Programación de BD</td>
+                    </tr>
+                    <tr>
+                        <td>9:30 - 10:15</td>
+                        <td>Proyectos de Sistemas de Información</td>
+                        <td>Arquitectura de Software</td>
+                        <td>Sistemas Operativos</td>
+                        <td>Tecnología Frontend</td>
+                        <td>Programación de BD</td>
+                    </tr>
+                    <tr>
+                        <td>10:15 - 11:00</td>
+                        <td>Proyectos de Sistemas de Información</td>
+                        <td>Arquitectura de Software</td>
+                        <td>Sistemas Operativos</td>
+                        <td>Innovación para el Impacto Local</td>
+                        <td>Metodología de Desarrollo de Software</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <h1 style="text-align: center;">Receso</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>11:30 - 12:15</td>
+                        <td rowspan="2">Proyectos de Sistemas de Información</td>
+                        <td rowspan="2">Tecnología Frontend</td>
+                        <td rowspan="2">Sistemas Operativos</td>
+                        <td rowspan="2">Innovación para el Impacto Local</td>
+                        <td rowspan="2">Metodología de Desarrollo de Software</td>
+                    </tr>
+                    <tr>
+                        <td>12:15 - 13:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <!-- -->
+    <!--pie de cabeza -->
+    <footer>
+        <p>Presentado por: Jorge Maurinho Baez Zuniga</p>
+        <p>Correo: <a href="mailto:jbaez.241ds06@istta.edu.pe">jbaez.241ds06@istta.edu.pe</a></p>
+    </footer>
+
+</body>
+
+</html>
